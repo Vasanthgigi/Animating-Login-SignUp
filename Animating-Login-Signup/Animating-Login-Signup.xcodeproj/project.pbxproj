@@ -9,12 +9,67 @@
 /* Begin PBXBuildFile section */
 		498AF18B242EBF3500FDDE57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF18A242EBF3500FDDE57 /* AppDelegate.swift */; };
 		498AF18D242EBF3500FDDE57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF18C242EBF3500FDDE57 /* SceneDelegate.swift */; };
-		498AF18F242EBF3500FDDE57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF18E242EBF3500FDDE57 /* ViewController.swift */; };
 		498AF192242EBF3500FDDE57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498AF190242EBF3500FDDE57 /* Main.storyboard */; };
 		498AF194242EBF3800FDDE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498AF193242EBF3800FDDE57 /* Assets.xcassets */; };
 		498AF197242EBF3800FDDE57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498AF195242EBF3800FDDE57 /* LaunchScreen.storyboard */; };
 		498AF1A2242EBF3800FDDE57 /* Animating_Login_SignupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF1A1242EBF3800FDDE57 /* Animating_Login_SignupTests.swift */; };
 		498AF1AD242EBF3800FDDE57 /* Animating_Login_SignupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF1AC242EBF3800FDDE57 /* Animating_Login_SignupUITests.swift */; };
+		498AF1BB242EBF9400FDDE57 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF1BA242EBF9400FDDE57 /* LoginViewController.swift */; };
+		498AF1BD242EBFA100FDDE57 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF1BC242EBFA100FDDE57 /* SignUpViewController.swift */; };
+		498AF1BF242EC09200FDDE57 /* FontHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF1BE242EC09200FDDE57 /* FontHandler.swift */; };
+		498AF1C2242EC10B00FDDE57 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF1C1242EC10B00FDDE57 /* Helper.swift */; };
+		498AF1C8242EC4F000FDDE57 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1C4242EC4F000FDDE57 /* LICENSE */; };
+		498AF1C9242EC4F000FDDE57 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1C5242EC4F000FDDE57 /* README.md */; };
+		498AF1CA242EC4F000FDDE57 /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF1C7242EC4F000FDDE57 /* PMSuperButton.swift */; };
+		498AF1F0242EC63200FDDE57 /* NunitoSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1CD242EC63200FDDE57 /* NunitoSans-LightItalic.ttf */; };
+		498AF1F1242EC63200FDDE57 /* NunitoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1CE242EC63200FDDE57 /* NunitoSans-BoldItalic.ttf */; };
+		498AF1F2242EC63200FDDE57 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1CF242EC63200FDDE57 /* NunitoSans-ExtraLight.ttf */; };
+		498AF1F3242EC63200FDDE57 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1D0242EC63200FDDE57 /* NunitoSans-Light.ttf */; };
+		498AF1F4242EC63200FDDE57 /* NunitoSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1D1242EC63200FDDE57 /* NunitoSans-BlackItalic.ttf */; };
+		498AF1F5242EC63200FDDE57 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1D2242EC63200FDDE57 /* NunitoSans-ExtraBold.ttf */; };
+		498AF1F6242EC63200FDDE57 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1D3242EC63200FDDE57 /* NunitoSans-Regular.ttf */; };
+		498AF1F7242EC63200FDDE57 /* NunitoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1D4242EC63200FDDE57 /* NunitoSans-SemiBoldItalic.ttf */; };
+		498AF1F8242EC63200FDDE57 /* NunitoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1D5242EC63200FDDE57 /* NunitoSans-Italic.ttf */; };
+		498AF1FA242EC63200FDDE57 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1D7242EC63200FDDE57 /* NunitoSans-Bold.ttf */; };
+		498AF1FB242EC63200FDDE57 /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1D8242EC63200FDDE57 /* NunitoSans-SemiBold.ttf */; };
+		498AF1FC242EC63200FDDE57 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1D9242EC63200FDDE57 /* NunitoSans-Black.ttf */; };
+		498AF1FD242EC63200FDDE57 /* NunitoSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1DA242EC63200FDDE57 /* NunitoSans-ExtraBoldItalic.ttf */; };
+		498AF1FE242EC63200FDDE57 /* NunitoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1DB242EC63200FDDE57 /* NunitoSans-ExtraLightItalic.ttf */; };
+		498AF1FF242EC63200FDDE57 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1DD242EC63200FDDE57 /* Raleway-BoldItalic.ttf */; };
+		498AF200242EC63200FDDE57 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1DE242EC63200FDDE57 /* Raleway-MediumItalic.ttf */; };
+		498AF201242EC63200FDDE57 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1DF242EC63200FDDE57 /* Raleway-ThinItalic.ttf */; };
+		498AF202242EC63200FDDE57 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E0242EC63200FDDE57 /* Raleway-ExtraLight.ttf */; };
+		498AF203242EC63200FDDE57 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E1242EC63200FDDE57 /* Raleway-Medium.ttf */; };
+		498AF204242EC63200FDDE57 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E2242EC63200FDDE57 /* Raleway-SemiBold.ttf */; };
+		498AF205242EC63200FDDE57 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E3242EC63200FDDE57 /* Raleway-ExtraBold.ttf */; };
+		498AF206242EC63200FDDE57 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E4242EC63200FDDE57 /* Raleway-ExtraBoldItalic.ttf */; };
+		498AF207242EC63200FDDE57 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E5242EC63200FDDE57 /* Raleway-Regular.ttf */; };
+		498AF208242EC63200FDDE57 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E6242EC63200FDDE57 /* Raleway-ExtraLightItalic.ttf */; };
+		498AF209242EC63200FDDE57 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E7242EC63200FDDE57 /* Raleway-SemiBoldItalic.ttf */; };
+		498AF20A242EC63200FDDE57 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E8242EC63200FDDE57 /* Raleway-Light.ttf */; };
+		498AF20B242EC63200FDDE57 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1E9242EC63200FDDE57 /* Raleway-Black.ttf */; };
+		498AF20D242EC63200FDDE57 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1EB242EC63200FDDE57 /* Raleway-BlackItalic.ttf */; };
+		498AF20E242EC63200FDDE57 /* Raleway-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1EC242EC63200FDDE57 /* Raleway-RegularItalic.ttf */; };
+		498AF20F242EC63200FDDE57 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1ED242EC63200FDDE57 /* Raleway-LightItalic.ttf */; };
+		498AF210242EC63200FDDE57 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1EE242EC63200FDDE57 /* Raleway-Thin.ttf */; };
+		498AF211242EC63200FDDE57 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 498AF1EF242EC63200FDDE57 /* Raleway-Bold.ttf */; };
+		498AF41F242EC9DA00FDDE57 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF409242EC9D900FDDE57 /* IQTextView.swift */; };
+		498AF420242EC9DA00FDDE57 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF40B242EC9D900FDDE57 /* IQPreviousNextView.swift */; };
+		498AF421242EC9DA00FDDE57 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF40C242EC9D900FDDE57 /* IQTitleBarButtonItem.swift */; };
+		498AF422242EC9DA00FDDE57 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF40D242EC9D900FDDE57 /* IQBarButtonItem.swift */; };
+		498AF423242EC9DA00FDDE57 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF40E242EC9D900FDDE57 /* IQToolbar.swift */; };
+		498AF424242EC9DA00FDDE57 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF40F242EC9D900FDDE57 /* IQUIView+IQKeyboardToolbar.swift */; };
+		498AF425242EC9DA00FDDE57 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF410242EC9D900FDDE57 /* IQInvocation.swift */; };
+		498AF426242EC9DA00FDDE57 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF412242EC9D900FDDE57 /* IQKeyboardManagerConstantsInternal.swift */; };
+		498AF427242EC9DA00FDDE57 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF413242EC9D900FDDE57 /* IQKeyboardManagerConstants.swift */; };
+		498AF428242EC9DA00FDDE57 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 498AF415242EC9D900FDDE57 /* IQKeyboardManager.bundle */; };
+		498AF429242EC9DA00FDDE57 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF416242EC9D900FDDE57 /* IQKeyboardReturnKeyHandler.swift */; };
+		498AF42A242EC9DA00FDDE57 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF417242EC9D900FDDE57 /* IQKeyboardManager.swift */; };
+		498AF42B242EC9DA00FDDE57 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF41A242EC9DA00FDDE57 /* IQUIScrollView+Additions.swift */; };
+		498AF42C242EC9DA00FDDE57 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF41B242EC9DA00FDDE57 /* IQUIViewController+Additions.swift */; };
+		498AF42D242EC9DA00FDDE57 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF41C242EC9DA00FDDE57 /* IQUITextFieldView+Additions.swift */; };
+		498AF42E242EC9DA00FDDE57 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF41D242EC9DA00FDDE57 /* IQUIView+Hierarchy.swift */; };
+		498AF42F242EC9DA00FDDE57 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF41E242EC9DA00FDDE57 /* IQNSArray+Sort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +93,6 @@
 		498AF187242EBF3500FDDE57 /* Animating-Login-Signup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animating-Login-Signup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		498AF18A242EBF3500FDDE57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		498AF18C242EBF3500FDDE57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		498AF18E242EBF3500FDDE57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		498AF191242EBF3500FDDE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		498AF193242EBF3800FDDE57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		498AF196242EBF3800FDDE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +103,65 @@
 		498AF1A8242EBF3800FDDE57 /* Animating-Login-SignupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Animating-Login-SignupUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		498AF1AC242EBF3800FDDE57 /* Animating_Login_SignupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animating_Login_SignupUITests.swift; sourceTree = "<group>"; };
 		498AF1AE242EBF3800FDDE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498AF1BA242EBF9400FDDE57 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		498AF1BC242EBFA100FDDE57 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		498AF1BE242EC09200FDDE57 /* FontHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHandler.swift; sourceTree = "<group>"; };
+		498AF1C1242EC10B00FDDE57 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		498AF1C4242EC4F000FDDE57 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		498AF1C5242EC4F000FDDE57 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		498AF1C7242EC4F000FDDE57 /* PMSuperButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSuperButton.swift; sourceTree = "<group>"; };
+		498AF1CD242EC63200FDDE57 /* NunitoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		498AF1CE242EC63200FDDE57 /* NunitoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		498AF1CF242EC63200FDDE57 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		498AF1D0242EC63200FDDE57 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		498AF1D1242EC63200FDDE57 /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		498AF1D2242EC63200FDDE57 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		498AF1D3242EC63200FDDE57 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		498AF1D4242EC63200FDDE57 /* NunitoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		498AF1D5242EC63200FDDE57 /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
+		498AF1D6242EC63200FDDE57 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		498AF1D7242EC63200FDDE57 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		498AF1D8242EC63200FDDE57 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		498AF1D9242EC63200FDDE57 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Black.ttf"; sourceTree = "<group>"; };
+		498AF1DA242EC63200FDDE57 /* NunitoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		498AF1DB242EC63200FDDE57 /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		498AF1DD242EC63200FDDE57 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		498AF1DE242EC63200FDDE57 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		498AF1DF242EC63200FDDE57 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		498AF1E0242EC63200FDDE57 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		498AF1E1242EC63200FDDE57 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		498AF1E2242EC63200FDDE57 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		498AF1E3242EC63200FDDE57 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		498AF1E4242EC63200FDDE57 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		498AF1E5242EC63200FDDE57 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		498AF1E6242EC63200FDDE57 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		498AF1E7242EC63200FDDE57 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		498AF1E8242EC63200FDDE57 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		498AF1E9242EC63200FDDE57 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		498AF1EA242EC63200FDDE57 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		498AF1EB242EC63200FDDE57 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		498AF1EC242EC63200FDDE57 /* Raleway-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-RegularItalic.ttf"; sourceTree = "<group>"; };
+		498AF1ED242EC63200FDDE57 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		498AF1EE242EC63200FDDE57 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		498AF1EF242EC63200FDDE57 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		498AF409242EC9D900FDDE57 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		498AF40B242EC9D900FDDE57 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		498AF40C242EC9D900FDDE57 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		498AF40D242EC9D900FDDE57 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		498AF40E242EC9D900FDDE57 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		498AF40F242EC9D900FDDE57 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		498AF410242EC9D900FDDE57 /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		498AF412242EC9D900FDDE57 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		498AF413242EC9D900FDDE57 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		498AF415242EC9D900FDDE57 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		498AF416242EC9D900FDDE57 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		498AF417242EC9D900FDDE57 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		498AF418242EC9D900FDDE57 /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		498AF41A242EC9DA00FDDE57 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		498AF41B242EC9DA00FDDE57 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		498AF41C242EC9DA00FDDE57 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		498AF41D242EC9DA00FDDE57 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		498AF41E242EC9DA00FDDE57 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +212,19 @@
 		498AF189242EBF3500FDDE57 /* Animating-Login-Signup */ = {
 			isa = PBXGroup;
 			children = (
+				498AF407242EC9D900FDDE57 /* IQKeyboardManagerSwift */,
+				498AF1C3242EC4F000FDDE57 /* PMSuperButton */,
+				498AF1C0242EC0EC00FDDE57 /* Helper */,
+				498AF1CB242EC63200FDDE57 /* Resourses */,
 				498AF18A242EBF3500FDDE57 /* AppDelegate.swift */,
 				498AF18C242EBF3500FDDE57 /* SceneDelegate.swift */,
-				498AF18E242EBF3500FDDE57 /* ViewController.swift */,
 				498AF190242EBF3500FDDE57 /* Main.storyboard */,
 				498AF193242EBF3800FDDE57 /* Assets.xcassets */,
 				498AF195242EBF3800FDDE57 /* LaunchScreen.storyboard */,
 				498AF198242EBF3800FDDE57 /* Info.plist */,
+				498AF1BA242EBF9400FDDE57 /* LoginViewController.swift */,
+				498AF1BC242EBFA100FDDE57 /* SignUpViewController.swift */,
+				498AF1BE242EC09200FDDE57 /* FontHandler.swift */,
 			);
 			path = "Animating-Login-Signup";
 			sourceTree = "<group>";
@@ -126,6 +245,154 @@
 				498AF1AE242EBF3800FDDE57 /* Info.plist */,
 			);
 			path = "Animating-Login-SignupUITests";
+			sourceTree = "<group>";
+		};
+		498AF1C0242EC0EC00FDDE57 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				498AF1C1242EC10B00FDDE57 /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		498AF1C3242EC4F000FDDE57 /* PMSuperButton */ = {
+			isa = PBXGroup;
+			children = (
+				498AF1C4242EC4F000FDDE57 /* LICENSE */,
+				498AF1C5242EC4F000FDDE57 /* README.md */,
+				498AF1C6242EC4F000FDDE57 /* Sources */,
+			);
+			path = PMSuperButton;
+			sourceTree = "<group>";
+		};
+		498AF1C6242EC4F000FDDE57 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				498AF1C7242EC4F000FDDE57 /* PMSuperButton.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		498AF1CB242EC63200FDDE57 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				498AF1CC242EC63200FDDE57 /* Nunito_Sans */,
+				498AF1DC242EC63200FDDE57 /* Raleway */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		498AF1CC242EC63200FDDE57 /* Nunito_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				498AF1CD242EC63200FDDE57 /* NunitoSans-LightItalic.ttf */,
+				498AF1CE242EC63200FDDE57 /* NunitoSans-BoldItalic.ttf */,
+				498AF1CF242EC63200FDDE57 /* NunitoSans-ExtraLight.ttf */,
+				498AF1D0242EC63200FDDE57 /* NunitoSans-Light.ttf */,
+				498AF1D1242EC63200FDDE57 /* NunitoSans-BlackItalic.ttf */,
+				498AF1D2242EC63200FDDE57 /* NunitoSans-ExtraBold.ttf */,
+				498AF1D3242EC63200FDDE57 /* NunitoSans-Regular.ttf */,
+				498AF1D4242EC63200FDDE57 /* NunitoSans-SemiBoldItalic.ttf */,
+				498AF1D5242EC63200FDDE57 /* NunitoSans-Italic.ttf */,
+				498AF1D6242EC63200FDDE57 /* OFL.txt */,
+				498AF1D7242EC63200FDDE57 /* NunitoSans-Bold.ttf */,
+				498AF1D8242EC63200FDDE57 /* NunitoSans-SemiBold.ttf */,
+				498AF1D9242EC63200FDDE57 /* NunitoSans-Black.ttf */,
+				498AF1DA242EC63200FDDE57 /* NunitoSans-ExtraBoldItalic.ttf */,
+				498AF1DB242EC63200FDDE57 /* NunitoSans-ExtraLightItalic.ttf */,
+			);
+			path = Nunito_Sans;
+			sourceTree = "<group>";
+		};
+		498AF1DC242EC63200FDDE57 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				498AF1DD242EC63200FDDE57 /* Raleway-BoldItalic.ttf */,
+				498AF1DE242EC63200FDDE57 /* Raleway-MediumItalic.ttf */,
+				498AF1DF242EC63200FDDE57 /* Raleway-ThinItalic.ttf */,
+				498AF1E0242EC63200FDDE57 /* Raleway-ExtraLight.ttf */,
+				498AF1E1242EC63200FDDE57 /* Raleway-Medium.ttf */,
+				498AF1E2242EC63200FDDE57 /* Raleway-SemiBold.ttf */,
+				498AF1E3242EC63200FDDE57 /* Raleway-ExtraBold.ttf */,
+				498AF1E4242EC63200FDDE57 /* Raleway-ExtraBoldItalic.ttf */,
+				498AF1E5242EC63200FDDE57 /* Raleway-Regular.ttf */,
+				498AF1E6242EC63200FDDE57 /* Raleway-ExtraLightItalic.ttf */,
+				498AF1E7242EC63200FDDE57 /* Raleway-SemiBoldItalic.ttf */,
+				498AF1E8242EC63200FDDE57 /* Raleway-Light.ttf */,
+				498AF1E9242EC63200FDDE57 /* Raleway-Black.ttf */,
+				498AF1EA242EC63200FDDE57 /* OFL.txt */,
+				498AF1EB242EC63200FDDE57 /* Raleway-BlackItalic.ttf */,
+				498AF1EC242EC63200FDDE57 /* Raleway-RegularItalic.ttf */,
+				498AF1ED242EC63200FDDE57 /* Raleway-LightItalic.ttf */,
+				498AF1EE242EC63200FDDE57 /* Raleway-Thin.ttf */,
+				498AF1EF242EC63200FDDE57 /* Raleway-Bold.ttf */,
+			);
+			path = Raleway;
+			sourceTree = "<group>";
+		};
+		498AF407242EC9D900FDDE57 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				498AF408242EC9D900FDDE57 /* IQTextView */,
+				498AF40A242EC9D900FDDE57 /* IQToolbar */,
+				498AF411242EC9D900FDDE57 /* Constants */,
+				498AF414242EC9D900FDDE57 /* Resources */,
+				498AF416242EC9D900FDDE57 /* IQKeyboardReturnKeyHandler.swift */,
+				498AF417242EC9D900FDDE57 /* IQKeyboardManager.swift */,
+				498AF418242EC9D900FDDE57 /* IQKeyboardManagerSwift.h */,
+				498AF419242EC9DA00FDDE57 /* Categories */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		498AF408242EC9D900FDDE57 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				498AF409242EC9D900FDDE57 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		498AF40A242EC9D900FDDE57 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				498AF40B242EC9D900FDDE57 /* IQPreviousNextView.swift */,
+				498AF40C242EC9D900FDDE57 /* IQTitleBarButtonItem.swift */,
+				498AF40D242EC9D900FDDE57 /* IQBarButtonItem.swift */,
+				498AF40E242EC9D900FDDE57 /* IQToolbar.swift */,
+				498AF40F242EC9D900FDDE57 /* IQUIView+IQKeyboardToolbar.swift */,
+				498AF410242EC9D900FDDE57 /* IQInvocation.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		498AF411242EC9D900FDDE57 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				498AF412242EC9D900FDDE57 /* IQKeyboardManagerConstantsInternal.swift */,
+				498AF413242EC9D900FDDE57 /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		498AF414242EC9D900FDDE57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				498AF415242EC9D900FDDE57 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		498AF419242EC9DA00FDDE57 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				498AF41A242EC9DA00FDDE57 /* IQUIScrollView+Additions.swift */,
+				498AF41B242EC9DA00FDDE57 /* IQUIViewController+Additions.swift */,
+				498AF41C242EC9DA00FDDE57 /* IQUITextFieldView+Additions.swift */,
+				498AF41D242EC9DA00FDDE57 /* IQUIView+Hierarchy.swift */,
+				498AF41E242EC9DA00FDDE57 /* IQNSArray+Sort.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +481,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				es,
 			);
 			mainGroup = 498AF17E242EBF3500FDDE57;
 			productRefGroup = 498AF188242EBF3500FDDE57 /* Products */;
@@ -232,9 +501,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498AF211242EC63200FDDE57 /* Raleway-Bold.ttf in Resources */,
+				498AF208242EC63200FDDE57 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				498AF206242EC63200FDDE57 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				498AF20E242EC63200FDDE57 /* Raleway-RegularItalic.ttf in Resources */,
+				498AF1FC242EC63200FDDE57 /* NunitoSans-Black.ttf in Resources */,
+				498AF210242EC63200FDDE57 /* Raleway-Thin.ttf in Resources */,
+				498AF203242EC63200FDDE57 /* Raleway-Medium.ttf in Resources */,
+				498AF1F8242EC63200FDDE57 /* NunitoSans-Italic.ttf in Resources */,
+				498AF1FF242EC63200FDDE57 /* Raleway-BoldItalic.ttf in Resources */,
+				498AF20A242EC63200FDDE57 /* Raleway-Light.ttf in Resources */,
+				498AF1F2242EC63200FDDE57 /* NunitoSans-ExtraLight.ttf in Resources */,
+				498AF205242EC63200FDDE57 /* Raleway-ExtraBold.ttf in Resources */,
+				498AF200242EC63200FDDE57 /* Raleway-MediumItalic.ttf in Resources */,
+				498AF1FE242EC63200FDDE57 /* NunitoSans-ExtraLightItalic.ttf in Resources */,
 				498AF197242EBF3800FDDE57 /* LaunchScreen.storyboard in Resources */,
+				498AF204242EC63200FDDE57 /* Raleway-SemiBold.ttf in Resources */,
+				498AF202242EC63200FDDE57 /* Raleway-ExtraLight.ttf in Resources */,
+				498AF1F0242EC63200FDDE57 /* NunitoSans-LightItalic.ttf in Resources */,
 				498AF194242EBF3800FDDE57 /* Assets.xcassets in Resources */,
+				498AF1F7242EC63200FDDE57 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
+				498AF1C9242EC4F000FDDE57 /* README.md in Resources */,
+				498AF1F1242EC63200FDDE57 /* NunitoSans-BoldItalic.ttf in Resources */,
+				498AF1F3242EC63200FDDE57 /* NunitoSans-Light.ttf in Resources */,
+				498AF1FB242EC63200FDDE57 /* NunitoSans-SemiBold.ttf in Resources */,
+				498AF20D242EC63200FDDE57 /* Raleway-BlackItalic.ttf in Resources */,
+				498AF201242EC63200FDDE57 /* Raleway-ThinItalic.ttf in Resources */,
+				498AF428242EC9DA00FDDE57 /* IQKeyboardManager.bundle in Resources */,
+				498AF207242EC63200FDDE57 /* Raleway-Regular.ttf in Resources */,
+				498AF1FD242EC63200FDDE57 /* NunitoSans-ExtraBoldItalic.ttf in Resources */,
+				498AF1F6242EC63200FDDE57 /* NunitoSans-Regular.ttf in Resources */,
+				498AF209242EC63200FDDE57 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				498AF1C8242EC4F000FDDE57 /* LICENSE in Resources */,
+				498AF1F5242EC63200FDDE57 /* NunitoSans-ExtraBold.ttf in Resources */,
+				498AF1F4242EC63200FDDE57 /* NunitoSans-BlackItalic.ttf in Resources */,
 				498AF192242EBF3500FDDE57 /* Main.storyboard in Resources */,
+				498AF1FA242EC63200FDDE57 /* NunitoSans-Bold.ttf in Resources */,
+				498AF20F242EC63200FDDE57 /* Raleway-LightItalic.ttf in Resources */,
+				498AF20B242EC63200FDDE57 /* Raleway-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +563,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				498AF18F242EBF3500FDDE57 /* ViewController.swift in Sources */,
+				498AF42E242EC9DA00FDDE57 /* IQUIView+Hierarchy.swift in Sources */,
+				498AF1BB242EBF9400FDDE57 /* LoginViewController.swift in Sources */,
+				498AF42F242EC9DA00FDDE57 /* IQNSArray+Sort.swift in Sources */,
+				498AF1C2242EC10B00FDDE57 /* Helper.swift in Sources */,
+				498AF42C242EC9DA00FDDE57 /* IQUIViewController+Additions.swift in Sources */,
+				498AF422242EC9DA00FDDE57 /* IQBarButtonItem.swift in Sources */,
 				498AF18B242EBF3500FDDE57 /* AppDelegate.swift in Sources */,
+				498AF42D242EC9DA00FDDE57 /* IQUITextFieldView+Additions.swift in Sources */,
 				498AF18D242EBF3500FDDE57 /* SceneDelegate.swift in Sources */,
+				498AF426242EC9DA00FDDE57 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				498AF42A242EC9DA00FDDE57 /* IQKeyboardManager.swift in Sources */,
+				498AF429242EC9DA00FDDE57 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				498AF424242EC9DA00FDDE57 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				498AF1BD242EBFA100FDDE57 /* SignUpViewController.swift in Sources */,
+				498AF420242EC9DA00FDDE57 /* IQPreviousNextView.swift in Sources */,
+				498AF41F242EC9DA00FDDE57 /* IQTextView.swift in Sources */,
+				498AF425242EC9DA00FDDE57 /* IQInvocation.swift in Sources */,
+				498AF1BF242EC09200FDDE57 /* FontHandler.swift in Sources */,
+				498AF427242EC9DA00FDDE57 /* IQKeyboardManagerConstants.swift in Sources */,
+				498AF1CA242EC4F000FDDE57 /* PMSuperButton.swift in Sources */,
+				498AF42B242EC9DA00FDDE57 /* IQUIScrollView+Additions.swift in Sources */,
+				498AF421242EC9DA00FDDE57 /* IQTitleBarButtonItem.swift in Sources */,
+				498AF423242EC9DA00FDDE57 /* IQToolbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +759,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63VPLRBCJX;
 				INFOPLIST_FILE = "Animating-Login-Signup/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +777,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63VPLRBCJX;
 				INFOPLIST_FILE = "Animating-Login-Signup/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
