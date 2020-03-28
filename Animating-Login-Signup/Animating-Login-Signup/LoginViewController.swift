@@ -11,14 +11,13 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak private var welcomeLabel: UILabel!
-    @IBOutlet weak private var ferryLabel: UILabel!
+    @IBOutlet weak private var giftieLabel: UILabel!
     @IBOutlet weak private var descriptionLabel: UILabel!
     @IBOutlet weak private var phoneNumberTextField: UITextField!
     @IBOutlet weak private var nextButton: UIButton!
     @IBOutlet weak private var bottomView: UIView!
-    @IBOutlet weak private var ferryLogo: UIImageView!
+    @IBOutlet weak private var giftieLogo: UIImageView!
     @IBOutlet weak private var errorLabel: UILabel!
-
     @IBOutlet weak private var outerScrollView: UIScrollView!
     @IBOutlet weak private var bottomViewHeightConstraints: NSLayoutConstraint!
     @IBOutlet weak private var mobileNumberTextFieldTopConstraints: NSLayoutConstraint!
@@ -30,13 +29,14 @@ class LoginViewController: UIViewController {
         
         setupLoginTextField()
         setupTextFieldShadow()
-        ferryLabel.addCharactersSpacing(spacing: 8, text: ferryLabel.text!)
+        giftieLabel.addCharactersSpacing(spacing: 8, text: giftieLabel.text!)
         nextButtonAndLogoInitialIdentity()
         animatingLabelsOpacity(alpha: 0)
         animatingTextFieldOpacity(alpha: 0)
         animateBottomView()
         setupAttributedTextToDescriptionLabel()
         setupErrorStateLabel()
+        hideAllErrorStates()
         // Do any additional setup after loading the view.
     }
 
@@ -47,6 +47,10 @@ class LoginViewController: UIViewController {
 }
 
 private extension LoginViewController {
+    
+    func hideAllErrorStates() {
+          errorLabel.isHidden = true
+      }
     
     func animateBottomView() {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
@@ -76,7 +80,7 @@ private extension LoginViewController {
     
     func animatingLabelsOpacity(alpha: CGFloat) {
         welcomeLabel.alpha = alpha
-        ferryLabel.alpha = alpha
+        giftieLabel.alpha = alpha
         descriptionLabel.alpha = alpha
     }
     
@@ -86,7 +90,7 @@ private extension LoginViewController {
     
     func nextButtonAndLogoInitialIdentity(isHidden: Bool = true) {
         nextButton.isHidden = isHidden
-        ferryLogo.isHidden = isHidden
+        giftieLogo.isHidden = isHidden
         nextButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
     }
     
@@ -119,16 +123,17 @@ private extension LoginViewController {
         phoneNumberTextField.setRightPaddingPoints(Helper.marginRight)
         phoneNumberTextField.font = phoneNumberTextField.font!.withSize(18)
         phoneNumberTextField.attributedPlaceholder =
-            NSAttributedString(string: "Mobile Number", attributes: [NSAttributedString.Key.foregroundColor: FontHandler.FerryColor.text_light.color])
+            NSAttributedString(string: "Mobile Number", attributes: [NSAttributedString.Key.foregroundColor: FontHandler.GiftieColor.text_light.color])
     }
     
     func setupErrorStateLabel() {
         errorLabel.text = "Field cannot be empty"
         errorLabel.font = FontHandler.Style.h5.font
-        errorLabel.textColor = FontHandler.FerryColor.error_State.color
+        errorLabel.textColor = FontHandler.GiftieColor.error_State.color
     }
     
     @IBAction func nextButtonAction(_ sender: Any) {
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let signupViewController = storyboard.instantiateViewController(withIdentifier: "SignUpViewControllerIdentifier") as! SignUpViewController
         self.navigationController?.pushViewController(signupViewController, animated: true)

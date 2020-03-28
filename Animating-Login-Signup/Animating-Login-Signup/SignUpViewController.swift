@@ -8,6 +8,14 @@
 
 import UIKit
 
+enum SignUpError: Int {
+    case FullName = 1, Email, Birthday
+    
+    func tag() -> Int {
+        return self.rawValue
+    }
+}
+
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak private var fullNameTextField: UITextField!
@@ -31,6 +39,7 @@ class SignUpViewController: UIViewController {
         setupErrorLabels()
         setupGenderButton()
         setupButtonImageColor()
+        hideAllErrorStates()
         // Do any additional setup after loading the view.
     }
     
@@ -49,7 +58,7 @@ private extension SignUpViewController {
             textField.setRightPaddingPoints(Helper.marginRight)
             textField.font = textField.font!.withSize(18)
             textField.attributedPlaceholder =
-                NSAttributedString(string: placeHolder, attributes: [NSAttributedString.Key.foregroundColor: FontHandler.FerryColor.text_light.color])
+                NSAttributedString(string: placeHolder, attributes: [NSAttributedString.Key.foregroundColor: FontHandler.GiftieColor.text_light.color])
         }
         func setupTextFieldShadow(textField: UITextField) {
             textField.layer.masksToBounds = false
@@ -70,7 +79,7 @@ private extension SignUpViewController {
         func setupErrorStateLabel(label: UILabel) {
             label.text = "Field cannot be empty"
             label.font = FontHandler.Style.h5.font
-            label.textColor = FontHandler.FerryColor.error_State.color
+            label.textColor = FontHandler.GiftieColor.error_State.color
         }
         setupErrorStateLabel(label: fullNameErrorLabel)
         setupErrorStateLabel(label: emailErrorLabel)
@@ -100,14 +109,73 @@ private extension SignUpViewController {
         setupGenderButtonShadow(view: femaleShadow)
     }
     
+    func hideAllErrorStates() {
+        fullNameErrorLabel.isHidden = true
+        emailErrorLabel.isHidden = true
+        birthdayErrorLabel.isHidden = true
+    }
+    
     func setupButtonImageColor() {
         let backImage = UIImage(named: "TutorialRightArrow")?.rotate(radians: .pi)
         backButton.setImage(backImage, for: .normal)
-        backButton.imageView?.setImageColor(color: FontHandler.FerryColor.black.color)
-        facebookButton.imageView?.setImageColor(color: FontHandler.FerryColor.white.color)
+        backButton.imageView?.setImageColor(color: FontHandler.GiftieColor.black.color)
+        facebookButton.imageView?.setImageColor(color: FontHandler.GiftieColor.white.color)
+    }
+    
+    func validateTextFields(textField: UITextField, isFromCharacterChange: Bool) -> Bool {
+        if textField.tag == SignUpError.FullName.tag() && textField.text?.count == 0 {
+            fullNameErrorLabel.isHidden = false
+            return false
+        } else if textField.tag == SignUpError.Email.tag() && !Helper.isValidEmail(emailString: textField.text!) {
+            emailErrorLabel.isHidden = false
+            return false
+        } else if textField.tag == SignUpError.Birthday.tag() && textField.text?.count == 0 {
+            birthdayErrorLabel.isHidden = false
+            return false
+        } else {
+            if textField.tag == SignUpError.FullName.tag() {
+                fullNameErrorLabel.isHidden = false
+            } else if textField.tag == SignUpError.Email.tag() {
+                emailErrorLabel.isHidden = false
+            } else if textField.tag == SignUpError.Birthday.tag() {
+                birthdayErrorLabel.isHidden = false
+            }
+        }
+        return true
+    }
+    
+    func validateAfterTappingNext() -> Bool {
+        
+        var validationStatus: Bool = true
+        
+        if fullNameTextField.text?.count == 0 {
+            fullNameErrorLabel.isHidden = false
+            validationStatus = false
+        } else {
+            fullNameErrorLabel.isHidden = true
+        }
+        
+        if !Helper.isValidEmail(emailString: emailTextField.text!) {
+            emailErrorLabel.isHidden = false
+            validationStatus = false
+        } else {
+            emailErrorLabel.isHidden = true
+        }
+        
+        if birthdayTextField.text?.count == 0 {
+            birthdayErrorLabel.isHidden = false
+            validationStatus = false
+        } else {
+            birthdayErrorLabel.isHidden = true
+        }
+        return validationStatus
     }
     
     @IBAction func backButtonAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func nextButtonAction(_ sender: Any) {
+        _ = validateAfterTappingNext()
     }
 }

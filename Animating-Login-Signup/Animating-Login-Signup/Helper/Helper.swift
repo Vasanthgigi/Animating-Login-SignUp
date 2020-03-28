@@ -34,6 +34,18 @@ class Helper: NSObject {
             alpha: CGFloat(1.0)
         )
     }
+    
+    class func isValidEmail(emailString:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let email = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return email.evaluate(with: emailString)
+    }
+    
+    class func isValidPhoneNumber(phNumberString:String) -> Bool {
+         let phNumberRegEx = "(?:(\\+\\d\\d\\s+)?((?:\\(\\d\\d\\)|\\d\\d)\\s+)?)(\\d{4,5}\\-?\\d{4})";
+         let phNumber = NSPredicate(format:"SELF MATCHES %@", phNumberRegEx)
+         return phNumber.evaluate(with: phNumberString)
+     }
 }
 
 extension UITextField {

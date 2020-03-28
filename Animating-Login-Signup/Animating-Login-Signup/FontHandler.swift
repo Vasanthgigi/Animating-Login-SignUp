@@ -67,27 +67,27 @@ struct FontHandler {
         var textColor: UIColor {
             switch self {
             case .h1:
-                return FerryColor.text_dark_semi_strong.color
+                return GiftieColor.text_dark_semi_strong.color
             case .h2:
-                return FerryColor.text_dark_semi_strong.color
+                return GiftieColor.text_dark_semi_strong.color
             case .h3:
-                return FerryColor.text_dark.color
+                return GiftieColor.text_dark.color
             case .h4:
-                return FerryColor.text_dark.color
+                return GiftieColor.text_dark.color
             case .h5:
-                return FerryColor.text_dark.color
+                return GiftieColor.text_dark.color
             case .h6:
-                return FerryColor.text_dark.color
+                return GiftieColor.text_dark.color
             case .Overline:
-                return FerryColor.text_dark.color
+                return GiftieColor.text_dark.color
             case .Subtitle1:
-                return FerryColor.text_dark.color
+                return GiftieColor.text_dark.color
             case .Subtitle2:
-                return FerryColor.text_light.color
+                return GiftieColor.text_light.color
             case .Body1:
-                return FerryColor.text_dark_strong.color
+                return GiftieColor.text_dark_strong.color
             case .Body2:
-                return FerryColor.text_dark.color
+                return GiftieColor.text_dark.color
             }
         }
         
@@ -119,7 +119,7 @@ struct FontHandler {
         }
     }
     
-    enum FerryColor: Int {
+    enum GiftieColor: Int {
         case text_dark = 1
         case text_dark_strong = 2
         case text_dark_semi_strong = 3
@@ -128,10 +128,10 @@ struct FontHandler {
         case text_lighter = 6
         case white = 7
         case black = 8
-        case ferry_blue = 9
+        case giftie_blue = 9
         case rewards_background = 10
-        case ferry_green = 11
-        case ferry_gold = 12
+        case giftie_green = 11
+        case giftie_gold = 12
         case levelCompleteBg = 13
         case error_State = 14
         
@@ -153,13 +153,13 @@ struct FontHandler {
                 return .white
             case .black:
                 return .black
-            case .ferry_blue:
+            case .giftie_blue:
                 return Helper.hexStringToUIColor(hex: "#0F85FB")
             case .rewards_background:
                 return Helper.hexStringToUIColor(hex: "#F5F5F5")
-            case .ferry_green:
+            case .giftie_green:
                 return Helper.hexStringToUIColor(hex: "#19d2ac")
-            case .ferry_gold:
+            case .giftie_gold:
                 return Helper.hexStringToUIColor(hex: "#F6A623")
             case .levelCompleteBg:
                 return Helper.hexStringToUIColor(hex: "#DDDDDD")

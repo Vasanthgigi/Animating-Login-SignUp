@@ -37,13 +37,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="367"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb3-mo-4oU">
-                                                        <rect key="frame" x="40.000000000000007" y="56.000000000000007" width="111.66666666666669" height="27.333333333333336"/>
+                                                        <rect key="frame" x="40.000000000000007" y="56.000000000000007" width="111.66666666666669" height="23.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ferry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KP9-mp-yT6">
-                                                        <rect key="frame" x="40" y="83.333333333333329" width="240" height="81.999999999999986"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="giftie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KP9-mp-yT6">
+                                                        <rect key="frame" x="40" y="79.333333333333329" width="240" height="81.999999999999986"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="240" id="RuM-Sy-y9x"/>
                                                         </constraints>
@@ -51,8 +51,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore up to 1000+ Rewards from the best places in Chennai." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1e-a7-ifz">
-                                                        <rect key="frame" x="40" y="235.33333333333334" width="295" height="49.333333333333343"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore up to 1000+ Rewards from the best places in the world ." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1e-a7-ifz">
+                                                        <rect key="frame" x="40" y="231.33333333333334" width="295" height="42.000000000000028"/>
                                                         <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -132,7 +132,7 @@
                                                             <action selector="nextButtonAction:" destination="1d9-fd-8T7" eventType="touchUpInside" id="n6E-RU-9sp"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallferryLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QkN-Ig-zWR">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallgiftieLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QkN-Ig-zWR">
                                                         <rect key="frame" x="40" y="210" width="100" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="2vM-yC-z5J"/>
@@ -204,8 +204,8 @@
                         <outlet property="bottomViewHeightConstraints" destination="HFx-Kr-42s" id="9IL-sj-ctR"/>
                         <outlet property="descriptionLabel" destination="A1e-a7-ifz" id="Ga3-jn-AgA"/>
                         <outlet property="errorLabel" destination="sm9-8a-opj" id="gQy-1d-Zyy"/>
-                        <outlet property="ferryLabel" destination="KP9-mp-yT6" id="4BD-6R-STk"/>
-                        <outlet property="ferryLogo" destination="QkN-Ig-zWR" id="ASC-ax-Mxm"/>
+                        <outlet property="giftieLabel" destination="KP9-mp-yT6" id="4BD-6R-STk"/>
+                        <outlet property="giftieLogo" destination="QkN-Ig-zWR" id="ASC-ax-Mxm"/>
                         <outlet property="mobileNumberTextFieldTopConstraints" destination="2hs-O8-iwP" id="w0F-Hh-gNg"/>
                         <outlet property="nextButton" destination="W6x-87-dF6" id="NCh-aA-PZH"/>
                         <outlet property="outerScrollView" destination="LrZ-fC-EN0" id="5oi-jO-IHa"/>
@@ -290,6 +290,9 @@
                                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="nextButtonAction:" destination="PVn-YS-w9X" eventType="touchUpInside" id="KRp-yM-eMi"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4j-Ez-YlY">
                                                         <rect key="frame" x="40" y="381" width="42" height="21"/>
@@ -389,7 +392,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7y-Vm-Bwr" customClass="PMSuperButton" customModule="Ferry" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7y-Vm-Bwr" customClass="PMSuperButton" customModule="Animating_Login_Signup" customModuleProvider="target">
                                                         <rect key="frame" x="279" y="545" width="56" height="56"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -426,7 +429,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aB1-pt-cFj" customClass="PMSuperButton" customModule="Ferry" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aB1-pt-cFj" customClass="PMSuperButton" customModule="Animating_Login_Signup" customModuleProvider="target">
                                                         <rect key="frame" x="215" y="545" width="56" height="56"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -486,7 +489,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKH-Ih-e5P">
                                                         <rect key="frame" x="40" y="80.666666666666671" width="295" height="161.33333333333331"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rN-I0-azY" customClass="CustomLabel" customModule="Ferry" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rN-I0-azY" customClass="CustomLabel" customModule="Animating_Login_Signup" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="20.333333333333332"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -497,7 +500,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're one step away from discovering amazing rewards &amp; loyalty cards in Chennai" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80e-JR-Lzv" customClass="CustomLabel" customModule="Ferry" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're one step away from discovering amazing rewards &amp; loyalty cards in the world " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80e-JR-Lzv" customClass="CustomLabel" customModule="Animating_Login_Signup" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="28.333333333333329" width="295" height="61"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -511,7 +514,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up using Google or Facebook" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGl-vw-JT2" customClass="CustomLabel" customModule="Ferry" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up using Google or Facebook" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGl-vw-JT2" customClass="CustomLabel" customModule="Animating_Login_Signup" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="105.33333333333331" width="109" height="61"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="109" id="bmH-UM-21A"/>
@@ -708,7 +711,7 @@
         <image name="FemaleUnhighlighted" width="24" height="24"/>
         <image name="Google" width="24" height="24"/>
         <image name="MaleUnhighlighted" width="24" height="24"/>
-        <image name="SmallferryLogo" width="100" height="50"/>
+        <image name="SmallgiftieLogo" width="100" height="50"/>
         <image name="TutorialRightArrow" width="21.333333969116211" height="21.333333969116211"/>
     </resources>
 </document>

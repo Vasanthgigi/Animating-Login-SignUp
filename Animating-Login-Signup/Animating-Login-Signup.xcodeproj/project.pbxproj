@@ -70,6 +70,7 @@
 		498AF42D242EC9DA00FDDE57 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF41C242EC9DA00FDDE57 /* IQUITextFieldView+Additions.swift */; };
 		498AF42E242EC9DA00FDDE57 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF41D242EC9DA00FDDE57 /* IQUIView+Hierarchy.swift */; };
 		498AF42F242EC9DA00FDDE57 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498AF41E242EC9DA00FDDE57 /* IQNSArray+Sort.swift */; };
+		49F8B101242ECDDC006CEF2F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8B100242ECDDC006CEF2F /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,7 @@
 		498AF41C242EC9DA00FDDE57 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		498AF41D242EC9DA00FDDE57 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		498AF41E242EC9DA00FDDE57 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		49F8B100242ECDDC006CEF2F /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 		498AF189242EBF3500FDDE57 /* Animating-Login-Signup */ = {
 			isa = PBXGroup;
 			children = (
+				49F8B0FF242ECDCE006CEF2F /* CustomLabel */,
 				498AF407242EC9D900FDDE57 /* IQKeyboardManagerSwift */,
 				498AF1C3242EC4F000FDDE57 /* PMSuperButton */,
 				498AF1C0242EC0EC00FDDE57 /* Helper */,
@@ -395,6 +398,14 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		49F8B0FF242ECDCE006CEF2F /* CustomLabel */ = {
+			isa = PBXGroup;
+			children = (
+				49F8B100242ECDDC006CEF2F /* CustomLabel.swift */,
+			);
+			path = CustomLabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -570,6 +581,7 @@
 				498AF42C242EC9DA00FDDE57 /* IQUIViewController+Additions.swift in Sources */,
 				498AF422242EC9DA00FDDE57 /* IQBarButtonItem.swift in Sources */,
 				498AF18B242EBF3500FDDE57 /* AppDelegate.swift in Sources */,
+				49F8B101242ECDDC006CEF2F /* CustomLabel.swift in Sources */,
 				498AF42D242EC9DA00FDDE57 /* IQUITextFieldView+Additions.swift in Sources */,
 				498AF18D242EBF3500FDDE57 /* SceneDelegate.swift in Sources */,
 				498AF426242EC9DA00FDDE57 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
